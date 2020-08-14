@@ -14,7 +14,16 @@
         <div class="container">
             <a class="main-logo" href="#"><img  src="img/main_logo.svg" alt="Pixer" width="58" height="20"></a>
             <ul class="nav">
-                <li><a href="#">Xizmatlar</a></li> 
+                <li class="hassub">
+                    <a href="#">Xizmatlar</a>
+                    <ul class="sub-munu">
+                        <li><a href="#">Vebsayt</a></li>
+                        <li><a href="#">Telegram bot</a></li>
+                        <li><a href="#">SMM</a></li>
+                        <li><a href="#">Grafik dizayn</a></li>
+                        <li><a href="#">CRM tizim</a></li>
+                    </ul>
+                </li> 
                 <li><a href="#">Portfolio</a></li> 
                 <li><a href="#">Jamoa</a></li> 
                 <li><a href="#">Blog</a></li> 
@@ -32,11 +41,11 @@
                 <a class="main-section-button" href="#">Xizmatlar bilan tanishish</a>
             </div>
             <div class="right-side">
-                <iframe class="video" width="458" height="258" src="https://www.youtube.com/embed/6_pru8U2RmM"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video" src="https://www.youtube.com/embed/6_pru8U2RmM"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div><!-- container -->
     </section><!-- main-section -->
-
+    
     <hr class="line">
     
     <section class="service">
@@ -49,29 +58,39 @@
             <div class="service-middle">
                 <ul class="service-list">
                     <li>
-                        <img src="img/website.png" srcset="img/website.png 1x, img/website2.png 2x" alt="Vebsayt tuzish">
-                        <h3>Vebsayt tuzish</h3>
-                        <p>lorem ipsum</p>
+                        <a href="">
+                            <img src="img/website.png" srcset="img/website.png 1x, img/website2.png 2x" alt="Vebsayt tuzish">
+                            <h3>Vebsayt tuzish</h3>
+                            <p>lorem ipsum</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="img/telegram_bot.png" srcset="img/telegram_bot.png 1x, img/telegram_bot2.png 2x" alt="Telegram bot">
-                        <h3>Telegram bot</h3>
-                        <p>lorem ipsum</p>
+                        <a href="">
+                            <img src="img/telegram_bot.png" srcset="img/telegram_bot.png 1x, img/telegram_bot2.png 2x" alt="Telegram bot">
+                            <h3>Telegram bot</h3>
+                            <p>lorem ipsum</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="img/smm.png" srcset="img/smm.png 1x, img/smm2.png 2x" alt="SMM">
-                        <h3>SMM</h3>
-                        <p>lorem ipsum</p>
+                        <a href="">
+                            <img src="img/smm.png" srcset="img/smm.png 1x, img/smm2.png 2x" alt="SMM">
+                            <h3>SMM</h3>
+                            <p>lorem ipsum</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="img/design.png" srcset="img/design.png 1x, img/design2.png 2x" alt="Grafik dizayn">
-                        <h3>Grafik dizayn</h3>
-                        <p>lorem ipsum</p>
+                        <a href="">
+                            <img src="img/design.png" srcset="img/design.png 1x, img/design2.png 2x" alt="Grafik dizayn">
+                            <h3>Grafik dizayn</h3>
+                            <p>lorem ipsum</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="img/crm.png" srcset="img/crm.png 1x, img/crm2.png 2x" alt="CRM tuzish">
-                        <h3>CRM tizimlar</h3>
-                        <p>lorem ipsum</p>
+                        <a href="">
+                            <img src="img/crm.png" srcset="img/crm.png 1x, img/crm2.png 2x" alt="CRM tuzish">
+                            <h3>CRM tizimlar</h3>
+                            <p>lorem ipsum</p>
+                        </a>
                     </li>
                 </ul>
             </div><!-- service-middle -->
@@ -84,7 +103,7 @@
     </section><!-- service -->
     
     <hr class="line2">
-
+    
     <section class="process">
         <div class="container">
             <div class="process-top">
@@ -150,8 +169,20 @@
                 <h2 class="order-heading">Buyurtma berish</h2>
                 <p class="order-text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
             </div>
-
+            
             <div class="order-list">
+                <form class="order-form" action="https://echo.htmlacademy.ru" method="GET">
+                    <input type="text" placeholder="Ismingiz" name="firstname" required>
+                    <input type="tel" placeholder="Telefon raqamingiz" name="phone number" required>
+                    <select name="service" id="service" required>
+                        <option>Vebsayt</option>
+                        <option>Telegram bot</option>
+                        <option>SMM</option>
+                        <option>Grafik dizayn</option>
+                        <option>CRM tizim</option>
+                    </select>
+                    <button class="order-button" type="submit">Buyurtma berish</button>
+                </form>
                 
             </div>
         </div>
@@ -174,13 +205,13 @@
                     <li><a href="#">Kontaktlar</a></li> 
                 </ul>
             </div>
-
+            
             <div class="footer-right">
                 <h3 class="footer-heading">Biz internetda</h3>
                 <ul class="social-media">
-                    <li><a href="#"><img src="img/telegram_icon.png" alt="Telegram icon"><span class="footer-icons">Telegram</span></a></li> 
-                    <li><a href="#"><img src="img/facebook_icon.png" alt="Facebook icon"><span class="footer-icons">Telegram</span></a></li> 
-                    <li><a href="#"><img src="img/instagram_icon.png" alt="Instagram icon"><span class="footer-icons">Telegram</span></a></li> 
+                    <li><a href="#"><img src="img/telegramicon.svg" alt="Telegram icon"><span class="footer-icons">Telegram</span></a></li> 
+                    <li><a href="#"><img src="img/facebookicon.svg" alt="Facebook icon"><span class="footer-icons">Telegram</span></a></li> 
+                    <li><a href="#"><img src="img/instagramicon.svg" alt="Instagram icon"><span class="footer-icons">Telegram</span></a></li> 
                 </ul>
             </div>
         </div>
